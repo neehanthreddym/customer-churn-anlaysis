@@ -90,6 +90,7 @@ Open and run the `data_cleaning.ipynb` notebook to preprocess the `CustomerChurn
 ## Project Structure
 ```
 CUSTOMER-CHURN-ANALYSIS/
+├── assets/                      # Screenshots of Dashboards and logos
 ├── env/                         # Python virtual environment
 ├── .gitignore                   # Git ignore file
 ├── customer_churn_analysis.pbix # Power BI project file
