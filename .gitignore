@@ -1,0 +1,16 @@
+# Python virtual environment
+env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Generated data files
+CustomerChurnCleaned.csv
+
+# Logs or temporary files (optional, if your project generates them)
+*.log
+*.tmp

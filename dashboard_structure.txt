@@ -1,0 +1,129 @@
+Dashboard Theme colors:
+-------------------------------
+Canvas background:#E6E6E6 (50% Transparency)
+Title background: #2C3E50
+Plots/KPIs background: #FFFFFF
+Churned customers: #E74C3C
+Retained customers: #27AE60
+Blue: #118DFF
+
+-----------------------------------------------------------------------------------
+PAGE 1: Executive Summary
+-----------------------------------------------------------------------------------
+|---------------------- Page title ----------------------|
+|      Executive Summary: Customer Churn Analysis        |
+|--------------------------------------------------------|
+|-------------------- KPI cards row ---------------------|
+| Total Customers | Churn Rate | Churned Customers | ... |
+|--------------------------------------------------------|
+| Donut: Churned vs Retained                             |
+|--------------------------------------------------------|
+| Clustered column: Churned vs Retained by Contract Type |
+|--------------------------------------------------------|
+| Column: Churn count by Tenure Group    | TreeMap: Churn by Payment Method |
+|--------------------------------------------------------|
+| Slicers: Contract | TenureGroup | Gender | SeniorCitizen |
+|--------------------------------------------------------|
+
+Questions:
+What is our churn rate & churned customer count?
+What % of customers are churning?
+Which contracts & tenure groups have the most churn? 
+Does payment method matter?
+
+
+-----------------------------------------------------------------------------------
+PAGE 2: Who is Churning? Customer Demographics & Profiles
+-----------------------------------------------------------------------------------
+|--------------------------- Page title ---------------------------|
+|                  Customer Demographics & Profiles                |
+|------------------------------------------------------------------|
+| Stacked Bar: Churn by SeniorCitizen | Stacked Bar: Churn by Gender |
+|------------------------------------------------------------------|
+| Stacked Bar: Churn by Partner     | Stacked Bar: Churn by Dependents |
+|------------------------------------------------------------------|
+| Column Chart: Churn count by TenureGroup                          |
+|------------------------------------------------------------------|
+| Slicers: Contract Type | Payment Method | InternetService |
+|------------------------------------------------------------------|
+
+Questions:
+Are seniors churning more?
+Does having a partner reduce churn?
+Do new customers churn the most?
+
+
+-----------------------------------------------------------------------------------
+PAGE 3: Impact of Contracts & Payment Methods on Churn
+-----------------------------------------------------------------------------------
+|--------------------------- Page title ---------------------------|
+|         Contracts, Billing & Payment: Impact on Churn            |
+|------------------------------------------------------------------|
+| Clustered Column: Churn by Contract Type                         |
+|------------------------------------------------------------------|
+| Stacked Bar or Donut: Churn by PaperlessBilling                  |
+|------------------------------------------------------------------|
+| TreeMap: Churn by Payment Method                                 |
+|------------------------------------------------------------------|
+| Column Chart (optional): Avg tenure by Contract Type             |
+|------------------------------------------------------------------|
+| Slicers: Gender | SeniorCitizen | InternetService | TenureGroup  |
+|------------------------------------------------------------------|
+
+Questions:
+Which contract types have highest churn?
+Do customers with paperless billing churn more or less?
+Do certain payment methods have higher churn?
+Are churn rates different for month-to-month vs longer contracts?
+
+
+-----------------------------------------------------------------------------------
+PAGE 4: Services & Churn Behavior
+-----------------------------------------------------------------------------------
+|--------------------------- Page title ---------------------------|
+|         Services & Churn: Impact of Product Subscriptions        |
+|------------------------------------------------------------------|
+| Clustered Column: Churn by InternetService                        |
+|------------------------------------------------------------------|
+| Stacked Bar: Churn by MultipleLines   | Stacked Bar: Churn by OnlineSecurity |
+|------------------------------------------------------------------|
+| Stacked Bar: Churn by OnlineBackup    | Clustered Bar: Churn by StreamingTV & StreamingMovies |
+|------------------------------------------------------------------|
+| Optional: Scatter: Number of services vs Churn Rate               |
+|------------------------------------------------------------------|
+| Slicers: Contract Type | Gender | SeniorCitizen | TenureGroup     |
+|------------------------------------------------------------------|
+
+Questions:
+Does churn differ by Internet service type (DSL, Fiber optic, None)?
+Are customers with multiple lines more loyal?
+Do security & backup services help retain customers?
+Do streaming services relate to churn?
+Are customers with more services (bundles) less likely to churn?
+
+
+-----------------------------------------------------------------------------------
+PAGE 5: Financial & Support Drivers of Churn
+-----------------------------------------------------------------------------------
+|------------------------- Page title -------------------------|
+|             Financial & Support Drivers of Churn             |
+|--------------------------------------------------------------|
+| 100% stacked column: Churn by MonthlyCharges (binned)        |
+|--------------------------------------------------------------|
+| Area chart: Churn by tenure (binned)                         |
+|--------------------------------------------------------------|
+| Line & column: Churn by TotalCharges (binned)                |
+|--------------------------------------------------------------|
+| Clustered bar: Churn by numAdminTickets | Donut: Churn by numTechTickets |
+|--------------------------------------------------------------|
+| Side-by-side column: Avg MonthlyCharges: churned vs retained |
+|--------------------------------------------------------------|
+| Slicers: Contract | InternetService | Gender | TenureGroup   |
+|--------------------------------------------------------------|
+
+Questions:
+Do higher monthly charges lead to more churn?
+Do new customers churn more than long-tenure customers?
+Do customers who open more support tickets churn more?
+Does total charges correlate with churn?
+
